@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="src/scripts/app.js" defer type="module"></script>
+  <script src="src/scripts/notices.js" defer></script>
+  <script src="src/scripts/current-year.js" defer></script>
+  <title>Check out your top Spotify tracks & artists all year round | Wrapped 365</title>
+</head>
+<body>
+  <div class="landing">
+    <header>
+      <nav>
+        <h1>Wrapped 365</h1>
+        <ul>
+          <li class="features">Features</li>
+          <li class="about">About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-hero">
+        <p>Your listening history all year round</p>
+        <p>Check out your top artists and tracks for the past year with Wrapped 365</p>
+        <p>Log in with your Spotify account to get started</p>
+      </div>
+      <div class="main-login">
+        <button type="button" id="log-in-btn">Log In</button>
+        <p class="privacy-policy">How Wrapped 365 uses your data</p>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li class="footer-copy">
+          <p><span id="current-year"></span> &copy; Wrapped 365. All rights reserved.</p>
+        </li>
+        <li class="footer-social-links">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/jonathan-owen-fullstack-specialist/" target="_blank">
+                <img src="/src/assets/linkedin.svg" alt="LinkedIn external link">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/MP421" target="_blank">
+                <img src="/src/assets/github.svg" alt="GitHub external link">
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+    <div class="features-open">
+      <img class="close-privacy-notice" src="/src/assets/close-white.svg" alt="">
+      <div class="features-details">
+        <p>
+          Discover your musical identity with Wrapped 365! With seamless Spotify
+          integration, users can log in to view their profile name, top played
+          artists, and favorite tracks from the past year. Dive into detailed
+          listening statistics, explore personalized playlists, and share your
+          music preferences with friends. Our intuitive design ensures a smooth
+          and engaging experience, making it easy to connect with your musical
+          journey.
+        </p>
+        <p>
+          Our app is designed for music enthusiasts who want to delve deeper into
+          their Spotify listening habits. By leveraging the power of Spotify's
+          API, we provide users with insights into their music preferences over
+          the past year. Whether you're curious about your most-played artists,
+          top tracks, or overall listening trends, our app offers a comprehensive
+          overview. Perfect for music lovers and data enthusiasts alike, our goal
+          is to create a fun and interactive way to engage with your music history.
+        </p>
+      </div>
+    </div>
+    <div class="about-open">
+      <img class="close-privacy-notice" src="/src/assets/close-white.svg" alt="">
+      <div class="about-details">
+        <p>
+          Wrapped 365 is a project that utilises the Spotify developer API to
+          retrieve data about logged in users and return data about each user.
+          The data retrieved comprises of the user's profile name, top listened
+          to artists of the past 365 days and the top listened to tracks of the
+          past 365 days.
+        </p>
+        <p>
+          For more information about the creator of this web app, please
+          <span class="about-link"><a href="https://github.com/MP421"
+          target="_blank">click here</a></span>.
+        </p>
+      </div>
+    </div>
+    <div class="privacy-policy-notice">
+      <img class="close-privacy-notice" src="/src/assets/close-white.svg" alt="">
+      <div class="notice-info">
+        <div class="tos">
+          <p>Terms of Service</p>
+          <p>Welcome to Wrapped 365. By accessing and using this website, you agree to comply with and be bound by the following terms and conditions:</p>
+          <ul>
+            <li>
+              Acceptance of Terms: By using this website, you agree to these Terms of Service. If you do not agree, please do not use this site.
+            </li>
+            <li>
+              Description of Service: Our service allows users to log in with their Spotify account to view their most listened to tracks and artists.
+            </li>
+            <li>
+              User Responsibilities: You are responsible for maintaining the confidentiality of your account and password and for restricting access to your device. You agree to accept responsibility for all activities that occur under your account.
+            </li>
+            <li>
+              Prohibited Activities: You agree not to engage in any activity that could harm or disrupt the website or other users. This includes unauthorized access, data mining, and distribution of malware.
+            </li>
+            <li>
+              Termination: We reserve the right to terminate or restrict your access to our service at any time, without notice, for any reason.
+            </li>
+            <li>
+              Limitation of Liability: We are not liable for any indirect, incidental, or consequential damages resulting from your use of the service.
+            </li>
+            <li>
+              Changes to Terms: We reserve the right to modify these Terms of Service at any time. Your continued use of the service constitutes your acceptance of any changes.
+            </li>
+          </ul>
+        </div>
+        <div class="pp">
+          <p>Privacy Policy</p>
+          <p>We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share information when you use our service.</p>
+          <ul>
+            <li>
+              Information Collection: When you log in with your Spotify account, we collect your most listened to tracks and artists. We do not collect any other personal information.
+            </li>
+            <li>
+              Use of Information: The information collected is used solely to display your most listened to tracks and artists on our website.
+            </li>
+            <li>
+              Data Sharing: We do not share your personal information with any third parties. Your data is only used within our service.
+            </li>
+            <li>
+              Data Security: We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.
+            </li>
+            <li>
+              User Rights: You have the right to request access to the personal information we hold about you and to request that we correct or delete your personal information.
+            </li>
+            <li>
+              Changes to Privacy Policy: We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on our website.
+            </li>
+            <li>
+              Contact Information: If you have any questions or concerns about this Privacy Policy, please contact us at [Your Contact Information].
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="notice">
+      <p>By using Wrapped 365 you agree to our Terms of Service and Privacy Policy.
+        <span class="privacy-policy-pop">Click here to learn more.</span>
+        <span class="close-banner">
+          <img src="/src/assets/close-black.svg" alt="close notice banner">
+        </span>
+      </p>
+    </div>
+  </div>
+  <div id="loading-spinner" style="display: none;">
+    <div class="spinner"></div>
+  </div>
+  <div class="app">
+    <p class="app-welcome">
+      Drumroll, please! The results are in, <span id="profile-name"></span>.
+      Your most listened to artists and tracks over the past 365 days are...
+    </p>
+    <img class="top-track-cover" alt="Top track">
+    <div class="result-lists">
+      <div class="">
+        <p>Top Artists</p>
+        <ul class="top-artists-list"></ul>
+      </div>
+      <div class="">
+        <p>Top Tracks</p>
+        <ul class="top-tracks-list"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
