@@ -1,5 +1,5 @@
 const clientId = import.meta.env.VITE_CLIENT_ID;
-const redirectUri = 'https://wrapped-365.vercel.app/callback';
+const redirectUri = 'https://wrapped-365.vercel.app/';
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
